@@ -4,9 +4,7 @@ services:
     product_service:
         build: ./product_service
         volumes:
-            - ./product_service:/home/node/app
-        ports:
-            - 5001:5000           
+            - ./product_service:/home/node/app      
     front_web:
         image: node:lts-alpine
         user: "node"
